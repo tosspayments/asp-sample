@@ -5,7 +5,7 @@
 
 <!--#include file="json2.asp"--> 
 <!--#include file="base64.asp"--> 
-<!--#include file="buildQuery.asp"--> 
+
 <%
 
 	call initCodecs
@@ -39,7 +39,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>°áÁ¦¼º°ø</title>
+    <title>ê²°ì œì„±ê³µ</title>
    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 </head>
@@ -47,14 +47,14 @@
 <section>
     <%
     if httpCode = 200 then %>
-        <h1>°áÁ¦ ¼º°ø</h1>
-        <h3>»óÇ°¸í: Åä½º Æ¼¼ÅÃ÷</h3>
-        <p>°á°ú µ¥ÀÌÅÍ:  <% response.write req.responseText %></p>
+        <h1>ê²°ì œ ì„±ê³µ</h1>
+        <h3>ìƒí’ˆëª…: í† ìŠ¤ í‹°ì…”ì¸ </h3>
+        <p>ê²°ê³¼ ë°ì´í„°:  <% response.write req.responseText %></p>
        <%
 	    else  %>
-        <h1>°áÁ¦ ½ÇÆÐ</h1>
+        <h1>ê²°ì œ ì‹¤íŒ¨</h1>
         <p><% response.write req.responseText%></p>
-        <span>¿¡·¯ÄÚµå: <% response.write httpCode%></span>
+        <span>ì—ëŸ¬ì½”ë“œ: <% response.write httpCode%></span>
         <% End if%>
 
 </section>
